@@ -85,18 +85,22 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                     .padding(16.dp),
                 verticalArrangement = Arrangement.spacedBy(10.dp),
                 horizontalAlignment = Alignment.CenterHorizontally
-            )
+            ){
+                Text("NAMA LENGKAP", fontWeight = FontWeight.SemiBold)
+                OutlinedTextField(
+                    value = textNama,
+                    singleLine = true,
+                    shape = MaterialTheme.shapes.large,
+                    modifier = Modifier.width(250.dp),
+                    label = { Text(text = "Nama Lengkap") },
+                    onValueChange = { textNama = it }
+                )
+
+            }
         }
 
 
-        OutlinedTextField(
-            value = textNama,
-            singleLine = true,
-            shape = MaterialTheme.shapes.large,
-            modifier = Modifier.width(250.dp),
-            label = { Text(text = "Nama Lengkap") },
-            onValueChange = { textNama = it }
-        )
+
         Row {
             gender.forEach { item ->
                 Row(
