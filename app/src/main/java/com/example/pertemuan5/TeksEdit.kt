@@ -57,7 +57,11 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 .background(Color(0xFF7E57C2))
                 .padding(start = 20.dp, bottom = 10.dp),
             contentAlignment = Alignment.BottomStart
-        )
+        ){
+            Text(
+                text = "Formulir Pendaftaran",
+                color = Color.White,
+        }
 
         OutlinedTextField(
             value = textNama,
