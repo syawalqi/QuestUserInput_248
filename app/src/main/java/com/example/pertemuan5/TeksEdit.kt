@@ -84,7 +84,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 modifier = Modifier
                     .padding(16.dp),
                 verticalArrangement = Arrangement.spacedBy(10.dp),
-                horizontalAlignment = Alignment.CenterHorizontally
+                horizontalAlignment = Alignment.Start
             ) {
                 Text("NAMA LENGKAP", fontWeight = FontWeight.SemiBold)
                 OutlinedTextField(
