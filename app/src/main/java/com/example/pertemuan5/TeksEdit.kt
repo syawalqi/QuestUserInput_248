@@ -141,6 +141,9 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                     onValueChange = { textAlamat = it }
                 )
                 Button(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(top = 8.dp),
 
                 ) { }
                 }
