@@ -158,6 +158,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 ){
                     Text("Submit", color = Color.White, fontSize = 16.sp)
                 }
+                Spacer(modifier = Modifier.height(10.dp))
 
             }
         }
