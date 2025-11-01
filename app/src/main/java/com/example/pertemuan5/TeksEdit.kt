@@ -144,8 +144,10 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                     modifier = Modifier
                         .fillMaxWidth()
                         .padding(top = 8.dp),
-
-                ) { }
+                    enabled = textAlamat.isNotEmpty(),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color(0xFF2196F3)
+                    ), { }
                 }
 
             }
