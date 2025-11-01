@@ -49,7 +49,11 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.Top,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Box()
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(80.dp)
+        )
 
         OutlinedTextField(
             value = textNama,
