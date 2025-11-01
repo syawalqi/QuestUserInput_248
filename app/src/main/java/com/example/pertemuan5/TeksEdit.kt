@@ -114,7 +114,14 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                     }
                 }
                 Text("STATUS PERKAWINAN", fontWeight = FontWeight.SemiBold)
-                Row {}
+                Row {
+                    statusOptions.forEach { item ->
+                        Row(
+                            modifier = Modifier.selectable(
+                                selected = textStatus == item,
+                                onClick = { textStatus = item }
+                            ),
+                }
 
             }
         }
