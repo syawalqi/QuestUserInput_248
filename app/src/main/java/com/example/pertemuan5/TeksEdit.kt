@@ -17,7 +17,6 @@ import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.ElevatedCard
-import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.RadioButton
@@ -63,7 +62,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 .background(Color(0xFF7E57C2))
                 .padding(start = 20.dp, bottom = 10.dp),
             contentAlignment = Alignment.BottomStart
-        ){
+        ) {
             Text(
                 text = "Formulir Pendaftaran",
                 color = Color.White,
@@ -74,19 +73,19 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
 
         Spacer(modifier = Modifier.height(20.dp))
 
-        Card (
+        Card(
             modifier = Modifier
                 .fillMaxWidth()
                 .padding(horizontal = 16.dp),
             shape = RoundedCornerShape(16.dp),
             elevation = CardDefaults.cardElevation(defaultElevation = 6.dp)
-        ){
-            Column (
+        ) {
+            Column(
                 modifier = Modifier
                     .padding(16.dp),
                 verticalArrangement = Arrangement.spacedBy(10.dp),
                 horizontalAlignment = Alignment.CenterHorizontally
-            ){
+            ) {
                 Text("NAMA LENGKAP", fontWeight = FontWeight.SemiBold)
                 OutlinedTextField(
                     value = textNama,
@@ -97,7 +96,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                     onValueChange = { textNama = it }
                 )
                 Text("JENIS KELAMIN", fontWeight = FontWeight.SemiBold)
-                Row {
+                Column {
                     gender.forEach { item ->
                         Row(
                             modifier = Modifier.selectable(
@@ -115,7 +114,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                     }
                 }
                 Text("STATUS PERKAWINAN", fontWeight = FontWeight.SemiBold)
-                Row {
+                Column {
                     statusOptions.forEach { item ->
                         Row(
                             modifier = Modifier.selectable(
@@ -156,7 +155,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                         alamat = textAlamat
                         status = textStatus
                     }
-                ){
+                ) {
                     Text("Submit", color = Color.White, fontSize = 16.sp)
                 }
                 Spacer(modifier = Modifier.height(10.dp))
@@ -167,7 +166,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                     modifier = Modifier
                         .fillMaxWidth()
                         .height(120.dp)
-                ){
+                ) {
                     Column(modifier = Modifier.padding(12.dp)) {
                         Text(text = "Nama   : $nama", color = Color.White)
                         Text(text = "Gender : $jenis", color = Color.White)
@@ -177,5 +176,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 }
             }
         }
+    }
+}
 
 
