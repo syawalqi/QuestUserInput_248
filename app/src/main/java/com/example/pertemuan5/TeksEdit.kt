@@ -1,5 +1,6 @@
 package com.example.pertemuan5
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -53,6 +54,9 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
             modifier = Modifier
                 .fillMaxWidth()
                 .height(80.dp)
+                .background(Color(0xFF7E57C2))
+                .padding(start = 20.dp, bottom = 10.dp),
+            contentAlignment = Alignment.BottomStart
         )
 
         OutlinedTextField(
