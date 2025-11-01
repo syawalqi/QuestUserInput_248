@@ -154,6 +154,9 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                         jenis = textJK
                         alamat = textAlamat
                         status = textStatus
+                    }
+                ){
+                    Text("Submit", color = Color.White, fontSize = 16.sp)
                 }
 
             }
