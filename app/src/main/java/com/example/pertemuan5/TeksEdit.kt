@@ -147,7 +147,13 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                     enabled = textAlamat.isNotEmpty(),
                     colors = ButtonDefaults.buttonColors(
                         containerColor = Color(0xFF2196F3)
-                    ), { }
+                    ),
+                    shape = RoundedCornerShape(50.dp),
+                    onClick = {
+                        nama = textNama
+                        jenis = textJK
+                        alamat = textAlamat
+                        status = textStatus
                 }
 
             }
