@@ -113,6 +113,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                         }
                     }
                 }
+                Text("STATUS PERKAWINAN", fontWeight = FontWeight.SemiBold)
 
             }
         }
