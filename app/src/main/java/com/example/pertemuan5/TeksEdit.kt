@@ -73,7 +73,9 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
         Spacer(modifier = Modifier.height(20.dp))
 
         Card (
-
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 16.dp),
         )
 
         OutlinedTextField(
