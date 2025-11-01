@@ -78,7 +78,10 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                 .padding(horizontal = 16.dp),
             shape = RoundedCornerShape(16.dp),
             elevation = CardDefaults.cardElevation(defaultElevation = 6.dp)
-        )
+        ){
+            Column ()
+        }
+
 
         OutlinedTextField(
             value = textNama,
