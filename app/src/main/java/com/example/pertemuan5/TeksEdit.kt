@@ -83,6 +83,8 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
             Column (
                 modifier = Modifier
                     .padding(16.dp),
+                verticalArrangement = Arrangement.spacedBy(10.dp),
+                horizontalAlignment = Alignment.CenterHorizontally
             )
         }
 
