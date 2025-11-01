@@ -168,13 +168,14 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                         .fillMaxWidth()
                         .height(120.dp)
                 ){
-            Column(modifier = Modifier.padding(horizontal = 5.dp, vertical = 15.dp)) {
-                Text(text = "Nama   : $nama", color = Color.White)
-                Text(text = "Gender : $jenis", color = Color.White)
-                Text(text = "Alamat : $alamat", color = Color.White)
+                    Column(modifier = Modifier.padding(12.dp)) {
+                        Text(text = "Nama   : $nama", color = Color.White)
+                        Text(text = "Gender : $jenis", color = Color.White)
+                        Text(text = "Status : $status", color = Color.White)
+                        Text(text = "Alamat : $alamat", color = Color.White)
+                    }
+                }
             }
         }
-    }
-}
 
 
