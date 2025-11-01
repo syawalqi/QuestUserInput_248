@@ -132,6 +132,7 @@ fun FormDataDiri(modifier: Modifier = Modifier) {
                         }
                     }
                 }
+                Text("ALAMAT", fontWeight = FontWeight.SemiBold)
                 OutlinedTextField(
                     value = textAlamat,
                     singleLine = true,
